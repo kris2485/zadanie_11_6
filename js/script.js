@@ -101,12 +101,13 @@ $(function() {
     	$element: $('#board .column-container')
 	};
 	//Funkcja przenoszenia kart z jednego miejsca do innego (np. do innej kolumny albo do innej pozycji w tej samej kolumnie)
-	function initSortable() {
-	   $('.column-card-list').sortable({
-	     connectWith: '.column-card-list',
-	     placeholder: 'card-placeholder'
-	   }).disableSelection(); //Metoda wyłączenia możliwości zaznaczania tekstu na kartach, które przeciągamy
-	 }
+		function initSortable() {
+	    $('.column-card-list').sortable({
+	      connectWith: '.column-card-list',
+	      placeholder: 'card-placeholder'
+	    }).disableSelection(); //Metoda wyłączenia możliwości zaznaczania tekstu na kartach, które przeciągamy
+	  }
+
 	//Podpięcie na element zdarzenia klinięcia, obsługującego wrzucania nowegj kolumny do tablicy
 	$('.create-column')
 	  .click(function(){

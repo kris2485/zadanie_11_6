@@ -1,8 +1,30 @@
 body {
-  margin: 50px auto;
-  text-align: center; }
-  body li {
-    list-style-type: none;
-    text-decoration: none; }
+  background-image: url("https://static.pexels.com/photos/248159/pexels-photo-248159.jpeg");
+  background-size: 100%;
+  text-align: center;
+}
+
+body .board h1 {
+  color: #00FFFF;
+}
+
+body .board .column-container .column h2 {
+  color: #00FFFF;
+}
+
+body .board .column-container .column .btn-delete {
+  margin: 10px;
+  cursor: pointer;
+}
+
+body .board .column-container .column .add-card {
+  margin: 10px;
+  cursor: pointer;
+}
+
+body .board .column-container .column ul li .card-description {
+  color: #fff;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
