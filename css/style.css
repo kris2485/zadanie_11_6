@@ -22,6 +22,10 @@ body .board .column-container .column .add-card {
   cursor: pointer;
 }
 
+body .board .column-container .column ul {
+  padding: 30px;
+}
+
 body .board .column-container .column ul li .card-description {
   color: #fff;
   cursor: pointer;

@@ -35,8 +35,11 @@ $(function() {
 			});
 			
 	    	$columnAddCard.click(function() {
-	        self.addCard(new Card(prompt("Enter the name of the card")));
-			});
+
+	    		var value = prompt("Enter the name of the card");
+
+			        self.addCard(new Card(value));
+					});
 
 	    	// konstruowanie kolumny
 			$column.append($columnTitle)
@@ -112,8 +115,12 @@ $(function() {
 	$('.create-column')
 	  .click(function(){
 		var name = prompt('Enter a column name');
-		var column = new Column(name);
-	    	board.addColumn(column);
+		//Instrukcja blokjąca dodawanie kolumny pomimo wybory przycisku "anuluj"
+		if (name > 0) {
+
+			var column = new Column(name);
+		    	board.addColumn(column);
+		}
 	  });
 	// Tworzenie kolumn
 	var todoColumn = new Column('To do');
